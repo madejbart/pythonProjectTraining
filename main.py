@@ -250,7 +250,7 @@ while sandwich_orders:
 print (finished_sandwiches)
 print(sandwich_orders)
 
-"""
+
 responses = {}
 # set a flag to True
 poll_active = True
@@ -270,3 +270,25 @@ print("\n Show results:")
 
 for name, response in responses.items():
     print(f"\n{name} would like to go to {response}.")
+"""
+# ======-----------Python book "" 8.1 - 8.2
+"""
+def favourite_book(book):
+    print(f"your favourite book is {book}")
+
+favourite_book('Esencjalista')
+
+"""
+# ======-----------Python book "" 8.3 - 8.5
+
+def make_shirt(size, message="I love Python"):
+    print(f'Your shirt size will be {size}')
+    print(f"\n And your text on your shirt will be {message}")
+
+#make_shirt(size = "Large")
+
+def describe_city(city, country="Poland"):
+    print(f'Your city is  {city}')
+    print(f"\n that is in the country:\n  {country}")
+
+describe_city(city = "Helsinki", country="Finlandia")
