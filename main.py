@@ -281,6 +281,7 @@ favourite_book('Esencjalista')
 """
 # ======-----------Python book "" 8.3 - 8.5
 
+"""
 def make_shirt(size, message="I love Python"):
     print(f'Your shirt size will be {size}')
     print(f"\n And your text on your shirt will be {message}")
@@ -292,3 +293,32 @@ def describe_city(city, country="Poland"):
     print(f"\n that is in the country:\n  {country}")
 
 describe_city(city = "Helsinki", country="Finlandia")
+
+"""
+# ======-----------Python book "" 8.6 - 8.8
+
+def city_country(city, country):
+    formated = f"\n {city}, {country}"
+    return formated
+
+while True:
+    print("\nPlease tell city name:")
+    print("(enter 'q' at any time to quit)")
+    city = input("City name: ")
+    if city == 'q':
+        break
+    country = input("Country name: ")
+    if city == 'q':
+        break
+
+    formatted_name = city_country(city, country)
+    print(f"{formatted_name}")
+
+
+
+
+
+
+
+
+
