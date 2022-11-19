@@ -297,6 +297,7 @@ describe_city(city = "Helsinki", country="Finlandia")
 """
 # ======-----------Python book "" 8.6 - 8.8
 
+"""
 def city_country(city, country):
     formated = f"\n {city}, {country}"
     return formated
@@ -313,6 +314,50 @@ while True:
 
     formatted_name = city_country(city, country)
     print(f"{formatted_name}")
+
+"""
+# ======-----------Python book "" 8.6 - 8.8
+
+def make_album(artist_name, album_tittle, number_songs = None):
+    music_album = {'artist': artist_name, 'album': album_tittle, 'songs': number_songs}
+    return music_album
+
+
+
+while True:
+    print("First specify your artist, q to quit")
+    artist = input("\n Give artist name:")
+    if artist == 'q':
+        break
+    print("Now specify album, q to quit")
+    album = input("\n Give album name:")
+    if album == 'q':
+        break
+    print("Now specify number of songs, q to quit")
+    songs = input("\n Give number of songs")
+    if songs == 'q':
+        break
+    new_album = make_album(artist, album, songs)
+    print(new_album)
+
+"""
+album1 = make_album('Michael Jackson', 'Thriller')
+print(album1)
+
+album2 = make_album('AC/DC', 'Back in Black')
+print(album2)
+
+album3 = make_album('The dark side of the Moon', 'Pink Floyd', 6)
+print(album3)
+
+"""
+
+
+
+
+
+
+
 
 
 
