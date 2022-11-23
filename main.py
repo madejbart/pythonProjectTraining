@@ -318,6 +318,7 @@ while True:
 """
 # ======-----------Python book "" 8.6 - 8.8
 
+"""
 def make_album(artist_name, album_tittle, number_songs = None):
     music_album = {'artist': artist_name, 'album': album_tittle, 'songs': number_songs}
     return music_album
@@ -340,7 +341,7 @@ while True:
     new_album = make_album(artist, album, songs)
     print(new_album)
 
-"""
+
 album1 = make_album('Michael Jackson', 'Thriller')
 print(album1)
 
@@ -351,12 +352,52 @@ album3 = make_album('The dark side of the Moon', 'Pink Floyd', 6)
 print(album3)
 
 """
+# ======-----------Python book "" 8.9 - 8.11
+"""
+
+list1 = ['sms1', 'sms2', 'sms3', 'sms4']
+sent_messages = []
+def send_messages(list):
+    while list:
+        current_message = list.pop()
+        print(current_message)
+        sent_messages.append(current_message)
 
 
 
+send_messages(list1)
+print(list1)
+
+
+list1 = ['sms1', 'sms2', 'sms3', 'sms4']
+sent_messages = []
+def send_messages(list):
+    while list:
+        current_message = list.pop()
+        print(current_message)
+        sent_messages.append(current_message)
 
 
 
+send_messages(list1[:])
+print(list1)
+
+# ======-----------Python book "" 8.12 - 8.14
+
+def sandwich_build(*items):
+    for item in items:
+        print(f" this will be on your sandwich: {item}")
+
+sandwich_build('cheese','tomato','ham','lettuce')
+"""
+
+def build_profile(name, lastname, **user_info):
+    user_info['name'] = name
+    user_info['lastname'] = lastname
+    return user_info
+
+user_profile = build_profile('Bart', 'Madej', location = 'Gdansk', age = 41)
+print(user_profile)
 
 
 
