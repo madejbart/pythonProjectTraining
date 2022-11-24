@@ -1,3 +1,4 @@
+
 # This is a sample Python script.
 
 # Press Shift+F10 to execute it or replace it with your code.
@@ -14,8 +15,6 @@
 #    print_hi('Bart')
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
-
-
 
 # Working with Lists
 # ======-----------Python book "" 5.8 - 5.10
@@ -389,8 +388,8 @@ def sandwich_build(*items):
         print(f" this will be on your sandwich: {item}")
 
 sandwich_build('cheese','tomato','ham','lettuce')
-"""
 
+# takes 2 necessary arguments and creates a dictionary with optional user_info data
 def build_profile(name, lastname, **user_info):
     user_info['name'] = name
     user_info['lastname'] = lastname
@@ -398,6 +397,16 @@ def build_profile(name, lastname, **user_info):
 
 user_profile = build_profile('Bart', 'Madej', location = 'Gdansk', age = 41)
 print(user_profile)
+"""
+
+# ======-----------Python book "" 8.15 - 8.17
+
+from printing_functions import build_profile as bp
+
+user = bp('Bart', 'Mad', location = 'Gdansk')
+print(user)
+
+
 
 
 
