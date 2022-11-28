@@ -400,11 +400,65 @@ print(user_profile)
 """
 
 # ======-----------Python book "" 8.15 - 8.17
-
+"""
 from printing_functions import build_profile as bp
 
 user = bp('Bart', 'Mad', location = 'Gdansk')
 print(user)
+
+"""
+# ======-----------Python book "" 9.1 - 9.3
+"""
+class Restaurant:
+    def __init__(self, restaurant_name, cuisine_type):
+"""
+"""Initialize restaurant name and cuisine type attributes."""
+"""
+        self.name = restaurant_name
+        self.type = cuisine_type
+
+    def describe_restaurant(self):
+        print(f"The restaurant name is  {self.name} , ")
+        print(f"And it has  {self.type} type of cuisine:")
+
+    def open_restaurant(self):
+        print(f"Restaurant {self.name} is open now")
+
+new_restaurant = Restaurant('DobreZarcie','PolskaKuchnia')
+
+#print(new_restaurant.name)
+#print(new_restaurant.type)
+
+new_restaurant.open_restaurant()
+
+wloska_rest = Restaurant('italiana', 'ItalianKitchen')
+
+wloska_rest.open_restaurant()
+
+thaiFood = Restaurant('Bangkok', 'ThaiFood')
+
+thaiFood.open_restaurant()
+"""
+class User:
+    def __init__(self, first_name, last_name):
+        self.user_info['name'] = first_name
+        self.user_info['lastname'] = last_name
+    def build_user(self, **user_info):
+
+
+    def describe_users(self):
+        print(self.user_info)
+
+new_user = User('Bart', 'Mad')
+new_user.describe_users()
+
+
+
+
+
+
+
+
 
 
 
