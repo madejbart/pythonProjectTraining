@@ -443,7 +443,7 @@
 #     def __init__(self, first_name, last_name):
 #         self.first_name = first_name
 #         self.last_name = last_name
-#     def build_user(self, **user_info):
+#
 #
 #
 #     def describe_users(self):
@@ -453,42 +453,54 @@
 # new_user.describe_users()
 # ======-----------Python book "" 9.4 - 9.5
 
-class Restaurant:
-    def __init__(self, restaurant_name, cuisine_type):
-# Initialize restaurant name and cuisine type attributes.
+# class Restaurant:
+#     def __init__(self, restaurant_name, cuisine_type):
+# # Initialize restaurant name and cuisine type attributes.
+#
+#         self.name = restaurant_name
+#         self.type = cuisine_type
+#         self.number_served = 0
+#
+#     def describe_restaurant(self):
+#         print(f"The restaurant name is  {self.name} , ")
+#         print(f"And it has  {self.type} type of cuisine:")
+#
+#     def set_number_served(self, number):
+#         self.number_served = number
+#
+#     def increment_number_served(self, customers):
+#         self.number_served += customers
+#
+#     def open_restaurant(self):
+#         print(f"Restaurant {self.name} is open now")
+#
+# new_restaurant = Restaurant('DobreZarcie','PolskaKuchnia')
+# print(new_restaurant.number_served)
+# new_restaurant.number_served = 3
+# print(new_restaurant.number_served)
+# new_restaurant.set_number_served(56)
+# print(new_restaurant.number_served)
+# new_restaurant.increment_number_served(20)
+# print(new_restaurant.number_served)
 
-        self.name = restaurant_name
-        self.type = cuisine_type
-        self.number_served = 0
+class User:
+    def __init__(self, first_name, last_name, login_attempts):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.login_attempts = login_attempts
 
-    def describe_restaurant(self):
-        print(f"The restaurant name is  {self.name} , ")
-        print(f"And it has  {self.type} type of cuisine:")
-
-    def set_number_served(self, number):
-        self.number_served = number
-
-    def increment_number_served(self, customers):
-        self.number_served += customers
-
-    def open_restaurant(self):
-        print(f"Restaurant {self.name} is open now")
+    def increment_login_attempts(self):
+        self.login_attempts = self.login_attempts + 1
 
 
-new_restaurant = Restaurant('DobreZarcie','PolskaKuchnia')
-print(new_restaurant.number_served)
-new_restaurant.number_served = 3
-print(new_restaurant.number_served)
-new_restaurant.set_number_served(56)
-print(new_restaurant.number_served)
-new_restaurant.increment_number_served(20)
-print(new_restaurant.number_served)
-
-
-
-
-
-
+user1 = User('Bart', 'Mad', 47)
+print(user1.login_attempts)
+user1.increment_login_attempts()
+print(user1.login_attempts)
+user1.increment_login_attempts()
+print(user1.login_attempts)
+user1.increment_login_attempts()
+print(user1.login_attempts)
 
 
 
