@@ -473,7 +473,7 @@
 #
 #     def open_restaurant(self):
 #         print(f"Restaurant {self.name} is open now")
-#
+
 # new_restaurant = Restaurant('DobreZarcie','PolskaKuchnia')
 # print(new_restaurant.number_served)
 # new_restaurant.number_served = 3
@@ -483,28 +483,61 @@
 # new_restaurant.increment_number_served(20)
 # print(new_restaurant.number_served)
 
-class User:
-    def __init__(self, first_name, last_name, login_attempts):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.login_attempts = login_attempts
+# class User:
+#     def __init__(self, first_name, last_name, login_attempts):
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self.login_attempts = login_attempts
+#
+#     def increment_login_attempts(self):
+#         self.login_attempts = self.login_attempts + 1
+#
+#
+# user1 = User('Bart', 'Mad', 47)
+# print(user1.login_attempts)
+# user1.increment_login_attempts()
+# print(user1.login_attempts)
+# user1.increment_login_attempts()
+# print(user1.login_attempts)
+# user1.increment_login_attempts()
+# print(user1.login_attempts)
 
-    def increment_login_attempts(self):
-        self.login_attempts = self.login_attempts + 1
+# ======-----------Python book "" 9.6 - 9.9
 
+#     def increment_login_attempts(self):
+#         self.login_attempts = self.login_attempts + 1
+#
+# class IceCreamStand(Restaurant):
+#     def __init__(self, restaurant_name, cuisine_type):
+#         super().__init__(restaurant_name, cuisine_type)
+#         self.flavors = ['chocolate', 'cream']
+#
+#     def get_info(self):
+#         print(f"this ice cream has flavours: {self.flavors}")
 
-user1 = User('Bart', 'Mad', 47)
-print(user1.login_attempts)
-user1.increment_login_attempts()
-print(user1.login_attempts)
-user1.increment_login_attempts()
-print(user1.login_attempts)
-user1.increment_login_attempts()
-print(user1.login_attempts)
+# new_restaurant = IceCreamStand('Nowa', 'polska')
+# new_restaurant.get_info()
+# new_restaurant.describe_restaurant()
 
+# class Privilages:
+#     def __init__(self, privilages = ['can do']):
+#         self.privilages = privilages
+#
+#     def show_privilages(self):
+#         print(f"Admin can: {self.privilages}")
+# class Admin(User):
+#     def __init__(self, first_name, last_name, login_attempts):
+#         super().__init__(first_name, last_name, login_attempts)
+#         self.privilages = Privilages()
+#
+#
+#
+#
+#
+# newUser = Admin('Bart','Mad',0)
+# newUser.privilages.show_privilages()
 
-
-
+# ======-----------Python book "" 9.10 - 9.12
 
 
 
