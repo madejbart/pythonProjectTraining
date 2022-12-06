@@ -539,7 +539,10 @@
 
 # ======-----------Python book "" 9.10 - 9.12
 
+from restaurant import Restaurant
 
+my_restaurant = Restaurant('nowa2','polska')
+my_restaurant.describe_restaurant()
 
 
 
