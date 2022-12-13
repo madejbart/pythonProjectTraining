@@ -539,10 +539,73 @@
 
 # ======-----------Python book "" 9.10 - 9.12
 
-from restaurant import Restaurant
+# from restaurant import Restaurant
+#
+# my_restaurant = Restaurant('nowa2','polska')
+# my_restaurant.describe_restaurant()
 
-my_restaurant = Restaurant('nowa2','polska')
-my_restaurant.describe_restaurant()
+# ======-----------Python book "" 9.13 - 9.16
+from random import randint
+from random import choice
+
+class Die:
+    def __init__(self, sides = 6):
+        self.sides = sides
+
+    def roll_die(self):
+        random_number = randint(1,self.sides)
+        print(random_number)
+
+# new_die = Die(sides=10)
+#
+# myList = [3, 56, 235, 8, 6, 98, 74, 32, 873, 50, 'j', 'd', 't', 'a', 'k' ]
+#
+# yourlist = []
+# yourlist.append(choice(myList))
+# yourlist.append(choice(myList))
+# yourlist.append(choice(myList))
+# yourlist.append(choice(myList))
+#
+# print(yourlist)
+#
+# active = True
+# i = 0
+# print(i)
+# while active:
+#     i += 1
+#     lotterry = []
+#     lotterry.append(choice(myList))
+#     lotterry.append(choice(myList))
+#     lotterry.append(choice(myList))
+#     lotterry.append(choice(myList))
+#     if lotterry == yourlist:
+#         active = False
+#
+# print(lotterry)
+# print(i)
+
+# ======-----------Python book "" 10.1 - 10.2
+
+# with open ('learning_python.txt') as my_file:
+#     contents = my_file.read()
+# print(contents)
+#
+# with open ('learning_python.txt') as my_file:
+#     for line in my_file:
+#         print(line)
+#
+
+with open ('learning_python.txt') as my_file:
+    lines = my_file.readlines()
+
+info = ''
+
+for line in lines:
+    new_line = line.replace('Python', 'C')
+    info += new_line.rstrip()
+
+print(info)
+
 
 
 
