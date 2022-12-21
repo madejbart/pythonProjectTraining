@@ -36,6 +36,7 @@ for item in lines:
     a += 1
     if a == b:
         a = 0
+
         new_list.append(item)
         with open(filename2, 'a') as f:
             f.write(item)
