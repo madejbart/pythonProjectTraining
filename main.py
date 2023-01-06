@@ -625,20 +625,36 @@ class Die:
 #     with open(filename, 'a') as file_object:
 #         file_object.write(greeting+"\n")
 
-filename = 'textbook.txt'
-with open(filename,  encoding='utf8', errors='ignore') as f:
-    lines = f.readlines()
-print(len(lines))
-a=0
-b=0
-for line in lines:
-   a = line.count('the ')
-   b = b + a
+# ======-----------Python book "" 10.10
+# filename = 'textbook.txt'
+# with open(filename,  encoding='utf8', errors='ignore') as f:
+#     lines = f.readlines()
+# print(len(lines))
+# a=0
+# b=0
+# for line in lines:
+#    a = line.count('the')
+#    b = b + a
+#
+# print(b)
 
-print(b)
+# ======-----------Python book "" 10.11 - 10.13
 
+import json
+filename = 'number.json'
 
+active = True
+while active:
+    favnumber = input("what is you favourite number? ")
+    with open(filename) as f:
+        number = json.load(f)
+    if favnumber == number:
+        print(f'the number {favnumber} you provided already exists:')
+    else:
+        active = False
 
+with open(filename, 'w') as f:
+    json.dump(favnumber, f)
 
 
 
