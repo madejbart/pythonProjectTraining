@@ -640,21 +640,47 @@ class Die:
 
 # ======-----------Python book "" 10.11 - 10.13
 
-import json
-filename = 'number.json'
+# import json
+# filename = 'number.json'
+#
+# active = True
+# while active:
+#     favnumber = input("what is you favourite number? ")
+#     with open(filename) as f:
+#         number = json.load(f)
+#     if favnumber == number:
+#         print(f'the number {favnumber} you provided already exists:')
+#     else:
+#         active = False
+#
+# with open(filename, 'w') as f:
+#     json.dump(favnumber, f)
 
-active = True
-while active:
-    favnumber = input("what is you favourite number? ")
-    with open(filename) as f:
-        number = json.load(f)
-    if favnumber == number:
-        print(f'the number {favnumber} you provided already exists:')
-    else:
-        active = False
+# ======-----------Python book "" 11.3
 
-with open(filename, 'w') as f:
-    json.dump(favnumber, f)
+class Employee:
+    def __init__(self, first_name, last_name, annual_salary):
+        self.first_name = first_name
+        self.last_name = last_name
+        self.annual_salary = annual_salary
+
+    def give_rise(self):
+        salary = input(f'what salary for the user {self.last_name} , for default press d?')
+        if salary == 'd':
+            self.annual_salary = 5000
+        else:
+            salary = int(salary)
+            self.annual_salary = salary
+
+
+empl1 = Employee('Bart', 'Mad', 35000)
+
+print(empl1.annual_salary)
+
+payrise2023 = empl1.give_rise()
+print(payrise2023)
+
+
 
 
 

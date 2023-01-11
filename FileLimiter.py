@@ -24,7 +24,7 @@ with open(filename2, 'w') as f:
 
 active = True
 while active:
-    sampling = input("Specify sampling in s ")
+    sampling = input("Specify sampling in [s] ")
     try:
         b = int(sampling)
     except ValueError:
@@ -42,3 +42,4 @@ for item in lines:
 
 print(len(new_list))
 print(a)
+
