@@ -665,12 +665,14 @@ class Employee:
         self.annual_salary = annual_salary
 
     def give_rise(self):
-        salary = input(f'what salary for the user {self.last_name} , for default press d?')
-        if salary == 'd':
-            self.annual_salary = 5000
+        answer = input(f'what payrise for the user {self.last_name} , for default press d?')
+        if answer == 'd':
+            payrise = 5000
         else:
-            salary = int(salary)
-            self.annual_salary = salary
+            payrise = int(answer)
+        self.annual_salary = self.annual_salary + payrise
+        return payrise
+
 
 
 empl1 = Employee('Bart', 'Mad', 35000)
@@ -679,7 +681,7 @@ print(empl1.annual_salary)
 
 payrise2023 = empl1.give_rise()
 print(payrise2023)
-
+print(empl1.annual_salary)
 
 
 
