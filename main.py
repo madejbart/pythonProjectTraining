@@ -658,32 +658,28 @@ class Die:
 
 # ======-----------Python book "" 11.3
 
-class Employee:
-    def __init__(self, first_name, last_name, annual_salary):
-        self.first_name = first_name
-        self.last_name = last_name
-        self.annual_salary = annual_salary
+# class Employee:
+#     def __init__(self, first_name, last_name, annual_salary):
+#         self.first_name = first_name
+#         self.last_name = last_name
+#         self.annual_salary = annual_salary
+#
+#     def give_rise(self, payrise = 5000):
+#         self.annual_salary = self.annual_salary + payrise
+#         return payrise
+#
+#
+#
+# empl1 = Employee('Bart', 'Mad', 35000)
 
-    def give_rise(self):
-        answer = input(f'what payrise for the user {self.last_name} , for default press d?')
-        if answer == 'd':
-            payrise = 5000
-        else:
-            payrise = int(answer)
-        self.annual_salary = self.annual_salary + payrise
-        return payrise
+# print(empl1.annual_salary)
+#
+# payrise2023 = empl1.give_rise(payrise=20000)
+# print(payrise2023)
+# print(empl1.annual_salary)
 
 
 
-empl1 = Employee('Bart', 'Mad', 35000)
-
-print(empl1.annual_salary)
-
-payrise2023 = empl1.give_rise()
-print(payrise2023)
-print(empl1.annual_salary)
-
-#99999
 
 
 

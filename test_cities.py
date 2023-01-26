@@ -2,7 +2,7 @@ import unittest
 from city_functions import get_formatted_city_country
 
 class CountryCityTest(unittest.TestCase):
-    """ Tests forcity_functions.py  """
+    """ Tests for city_functions.py  """
 
     def test_city_country(self):
         formatedcityandcountry = get_formatted_city_country('santiago', 'chile')
